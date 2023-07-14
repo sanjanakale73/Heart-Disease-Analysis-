@@ -1,6 +1,10 @@
 #------------------Heart Disease Analysis and Prediction
+#Clear Workspace
 rm(list=ls())
-setwd("C:\\Users\\Sanjana\\Downloads")
+
+## Set the working directory to the project root folder
+# This assumes that the script file is located in the root folder of the project
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
 #Datasets : 1 cleveland.data
 #           2 hungarian.data
